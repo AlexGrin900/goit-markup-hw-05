@@ -89,7 +89,6 @@ address {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-margin));
   margin-left: calc(-1 * var(--card-set-margin));
 }
 .header {
@@ -121,6 +120,8 @@ address {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-s {
   color: var(--title-text-color);
@@ -245,6 +246,7 @@ address {
 }
 .button-hero {
   font-family: Roboto;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -298,7 +300,7 @@ address {
 }
 .team-title,
 .client-title {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .team-img {
   margin-bottom: 30px;
