@@ -89,6 +89,7 @@ address {
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-margin));
   margin-left: calc(-1 * var(--card-set-margin));
 }
 .header {
@@ -302,9 +303,12 @@ address {
 .client-title {
   margin-bottom: 50px;
 }
-.team-img {
-  margin-bottom: 30px;
+.team-card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-margin));
 }
+
 .team-item {
   background: var(--white-color);
   flex-basis: calc(100% / 4 - 30px);
@@ -313,14 +317,14 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  padding-bottom: 30px;
 }
-
+.team-info {
+  padding: 30px 32px 30px 32px;
+}
 .name {
-  /* margin-top: 30px; */
   font-weight: 700;
   color: var(--title-text-color);
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 .position {
   margin-bottom: 16px;
@@ -369,14 +373,15 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--primary-icon-color);
+  color: var(--primary-icon-color);
   transition: background-color var(--transition-hover);
 }
+
 .social-item + .social-item {
   margin-left: 10px;
 }
 .social-icon {
-  fill: var(--primary-icon-color);
+  fill: currentColor;
   transition: color var(--transition-hover);
 }
 
@@ -502,7 +507,12 @@ address {
 .card-heading {
   margin-bottom: 4px;
 }
-.footer .logo {
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
   margin-bottom: 20px;
   display: block;
 }
