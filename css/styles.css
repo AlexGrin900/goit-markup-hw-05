@@ -485,6 +485,11 @@ address {
   position: relative;
   overflow: hidden;
 }
+.product-name {
+  font-weight: 700;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
 .project-top-text {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
